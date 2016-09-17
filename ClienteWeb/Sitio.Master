@@ -1,0 +1,67 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Sitio.master.cs" Inherits="ClienteWeb.Sitio" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+    </div>
+        <table border="1" style="width:100%;">
+            <tr>
+                <td class="auto-style6">My Wine</td>
+            </tr>
+            <tr>
+                <td class="auto-style4">
+                    <asp:Menu ID="Menu1"
+                        runat="server"
+                        BackColor="#B5C7DE"
+                        DataSourceID="SiteMapDataSource1"
+                        DynamicHorizontalOffset="2"
+                        Font-Names="Verdana"
+                        Font-Size="Medium"
+                        ForeColor="#284E98"
+                        Orientation="Horizontal"
+                        StaticDisplayLevels="2"
+                        StaticSubMenuIndent="10px">
+                            <DynamicHoverStyle BackColor="#284E98"
+                                ForeColor="White" />
+                            <DynamicMenuItemStyle HorizontalPadding="5px"
+                                VerticalPadding="2px" />
+                            <DynamicMenuStyle BackColor="#B5C7DE" />
+                            <DynamicSelectedStyle BackColor="#507CD1" />
+                            <StaticHoverStyle BackColor="#284E98"
+                                ForeColor="White" />
+                            <StaticMenuItemStyle HorizontalPadding="5px"
+                                VerticalPadding="2px" />
+                            <StaticSelectedStyle BackColor="#507CD1" />
+                    </asp:Menu>
+                    <asp:SiteMapDataSource ID="SiteMapDataSource1" runat="server" />
+                </td>
+            </tr>
+            <tr>
+                <td class="auto-style4">
+                    <asp:SiteMapPath ID="smdsMenuPrincipal" runat="server" CssClass="auto-style3">
+                    </asp:SiteMapPath>
+                </td>
+            </tr>
+            <tr>
+                <td class="auto-style2">
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+                </td>
+            </tr>
+            <tr>
+                <td class="auto-style5">MyWine - 2016</td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
